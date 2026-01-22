@@ -68,8 +68,8 @@ class ClassifyTriangle {
             // Confirm it's a legal triangle before declaring
             // it to be scalene
 
-            if (Side1 - Side2 <= Side3 | Side1 - Side3 <= Side2 |
-                    Side2 - Side3 <= Side1) // swiches to correct structure
+            if (Side1 + Side2 <= Side3 | Side1 + Side3 <= Side2 |
+                    Side2 + Side3 <= Side1) // swiches to correct structure
                 triOut = 3;
             else
                 triOut = 0;
